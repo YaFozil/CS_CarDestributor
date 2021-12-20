@@ -25,9 +25,9 @@ dp = Dispatcher(bot, storage=storage)
 ```
 - Use this (in config.pу file, 8-line) TOKEN => 5070079969:AAHLRRDK5GpikLFGi-fNrByoc_nzpvFE50Q to run this program, [reason to use only this token](https://core.telegram.org/bots/api/#sending-files) in our program is that file_id uniquely identifies a file, but a file can have different valid file_ids even for the same bot.
  - This is Click(Test) token => 398062629:TEST:999999999_F91D8F69C042267444B74CC0B3C747757EB0E065 client.рy file 164-line
-sh
+```sh
  provider_token="398062629:TEST:999999999_F91D8F69C042267444B74CC0B3C747757EB0E065",
- 
+``` 
 ## Run bot
 You should run bot in tele_bot.py file
 ```sh
