@@ -9,7 +9,7 @@
  - [Install SQLite browser for DB](https://sqlitebrowser.org/dl/)
  ## AdminID and TOKEN
 - AdminID is in config.pу file,  9-line 
-sh
+```sh
 from aiogram import Bot
 from aiogram.dispatcher import Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
@@ -22,7 +22,7 @@ adminid =1234567890 #  <== PUT YOUR ADMINID HERE
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot, storage=storage)
-
+```
 - Use this (in config.pу file, 8-line) TOKEN => 5070079969:AAHLRRDK5GpikLFGi-fNrByoc_nzpvFE50Q to run this program, [reason to use only this token](https://core.telegram.org/bots/api/#sending-files) in our program is that file_id uniquely identifies a file, but a file can have different valid file_ids even for the same bot.
  - This is Click(Test) token => 398062629:TEST:999999999_F91D8F69C042267444B74CC0B3C747757EB0E065 client.рy file 164-line
 sh
@@ -30,7 +30,7 @@ sh
  
 ## Run bot
 You should run bot in tele_bot.py file
-sh
+```sh
 from aiogram.utils import executor
 from config import dp
 from data_base import orders, sqlite_contact_db, sqlite_db, sqlite_registered_users_db
@@ -53,6 +53,7 @@ admin.register_handlers_admin_contacts(dp)
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+    ```
 
 ## Some screenshots of the Bot for Visualization
 
