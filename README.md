@@ -54,7 +54,10 @@ admin.register_handlers_admin_contacts(dp)
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
 ```
-
+## Start bot
+- First of all, You have to add [this bot](https://t.me/CSTESTlabBOT) to any group and promote to admin
+- Then press /start command in the bot. In the group where the bot is admin choose /moderator command from menu (bot will send you "👨‍💻 Hello Admin!" message.). Now You can add new cars to list of cars and contact details.
+- After adding cars and ☎️ contact details you can view them as a client(press /start command to be a client)
 ## Some screenshots of the Bot for Visualization
 
 
