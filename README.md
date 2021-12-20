@@ -53,7 +53,7 @@ admin.register_handlers_admin_contacts(dp)
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
-    ```
+```
 
 ## Some screenshots of the Bot for Visualization
 
